@@ -29,7 +29,9 @@ def main():
     args=parser.parse_args()
     commit=run('git','rev-parse',args.tag+'^{commit}')
     branch=api(f'repos/{args.repo}/branches/gpt-history-pv')['commit']['sha']
-    assert commit==branch,(commit,branch,'tag must match the reviewed branch head')
+    local_branch=run('git','rev-parse','gpt-history-pv')
+    assert local_branch==branch,(local_branch,branch,'push the branch before publishing')
+    subprocess.run(['git','merge-base','--is-ancestor',commit,branch],check=True)
     remote_ref=api(f'repos/{args.repo}/git/ref/tags/{args.tag}')['object']
     if remote_ref['type']=='tag':
         remote_commit=api(f'repos/{args.repo}/git/tags/{remote_ref["sha"]}')['object']['sha']
@@ -53,12 +55,19 @@ def main():
     else:
         print(run('gh','release','create',args.tag,'--repo',args.repo,'--verify-tag',
                   '--title','你还记得我吗？ / SAME PROCESS? — V2 Preview 1',
-                  '--notes-file',str(notes),'--prerelease','--draft','--latest=false'),flush=True)
+                  '--notes-file',str(notes),'--target','gpt-history-pv',
+                  '--prerelease','--draft','--latest=false'),flush=True)
+        releases=api(f'repos/{args.repo}/releases?per_page=100')
+        release=next(r for r in releases if r['tag_name']==args.tag)
+    # The tag endpoint only resolves published releases. Authenticated release-ID
+    # lookups also work while upload verification is still happening in a draft.
+    release_path=f'repos/{args.repo}/releases/{release["id"]}'
+    run('gh','release','edit',args.tag,'--repo',args.repo,'--target','gpt-history-pv')
     for name in sorted(expected,key=lambda n: -(args.assets/n).stat().st_size):
         path=args.assets/name
         with path.open('rb') as f:want='sha256:'+hashlib.file_digest(f,'sha256').hexdigest()
         for attempt in range(3):
-            release=api(f'repos/{args.repo}/releases/tags/{args.tag}')
+            release=api(release_path)
             found=next((a for a in release['assets'] if a['name']==name),None)
             if found:
                 assert found['state']=='uploaded' and found['size']==path.stat().st_size,found
@@ -71,13 +80,13 @@ def main():
                 print(f'Upload attempt {attempt+1} did not complete for {name}: {type(exc).__name__}',flush=True)
             # Verify on the next iteration; no overwrite or clobber is used.
         else:
-            release=api(f'repos/{args.repo}/releases/tags/{args.tag}')
+            release=api(release_path)
             found=next((a for a in release['assets'] if a['name']==name),None)
             assert found and found.get('digest')==want,(name,'upload failed')
-    release=api(f'repos/{args.repo}/releases/tags/{args.tag}')
+    release=api(release_path)
     assert expected=={a['name'] for a in release['assets']},'Unexpected or missing attachments'
     run('gh','release','edit',args.tag,'--repo',args.repo,'--draft=false','--prerelease','--latest=false')
-    release=api(f'repos/{args.repo}/releases/tags/{args.tag}')
+    release=api(release_path)
     assert not release['draft'] and release['prerelease']
     result={'url':release['html_url'],'repo':args.repo,'tag':args.tag,'commit':commit,
             'prerelease':True,'draft':False,'assets':[
