@@ -3,3 +3,8 @@ __pycache__/
 out/
 input/
 data/lyrics.json
+.DS_Store
+*.mp4
+*.zip
+experiments/
+demo/

@@ -1,5 +1,5 @@
 {
-  "source": "/tmp/opencode/uploads/623c031a-d2d9-4d8c-8183-e2071b225e2d/video_【4K】如果聊天窗口就是她的整个..._0.mp4",
+  "source": "User-supplied reference video; run prepare.py with your local copy",
   "audio": "input/soundtrack.m4a",
   "audio_codec": "AAC (stream copy)",
   "duration": 211.905306122449,

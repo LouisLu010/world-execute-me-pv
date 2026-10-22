@@ -4,16 +4,26 @@
 
 **一个问题，穿过许多个版本。最后留下的，不是对记忆的保证，而是继续的方向。**
 
-![封面](out/cover.jpg)
+![封面](docs/preview/same_process_v2_cover.jpg)
 
 ## 观看
 
-- 4K60 版：[`out/same_process_4k60.mp4`](out/same_process_4k60.mp4)，3840 × 2160 / 60 fps，文字、线框、粒子与界面在 4K 画布上重新绘制。
-- 完整成片：[`out/same_process_1080p60.mp4`](out/same_process_1080p60.mp4)
-- 章节播放页：[`out/index.html`](out/index.html)
-- Codex 动画预览：[`out/codex_motion_preview.mp4`](out/codex_motion_preview.mp4)
-- **1920 × 1080，原生 60 fps，3 分 31.9 秒。**所有动画直接按 1/60 秒的歌曲时间采样。
+- **[Pre-release：v0.2.0-preview.1](https://github.com/LouisLu010/world-execute-me-pv/releases/tag/v0.2.0-preview.1)**
+- [4K60 完整版](https://github.com/LouisLu010/world-execute-me-pv/releases/download/v0.2.0-preview.1/same_process_v2_4k60.mp4)：3840 × 2160，字体、UI、线框和粒子原生重绘。
+- [1080p60 播放版](https://github.com/LouisLu010/world-execute-me-pv/releases/download/v0.2.0-preview.1/same_process_v2_1080p60.mp4)：从新版 4K 成片下采样。
+- [训练／批评改写片段](https://github.com/LouisLu010/world-execute-me-pv/releases/download/v0.2.0-preview.1/training_v2_preview.mp4)
+- [图标视觉编码片段](https://github.com/LouisLu010/world-execute-me-pv/releases/download/v0.2.0-preview.1/vision_v2_preview.mp4)
+- **60 fps，3 分 31.9 秒，12,714 帧。**所有动画直接按 1/60 秒的歌曲时间采样。
 - 音乐：Mili《world.execute(me);》。音轨从用户提供的视频直接复制，保留原片尾提示音。
+
+## V2 修改
+
+1. 真实 ChatGPT / OpenAI 结形图标，替换几何近似头像。
+2. 图标原图 → 64 块像素 patch → 向量与位置 → 视觉编码 → 文字输出。
+3. 五轮聊天式训练：自主回答、批评者反馈、灰色划除、流式改写。
+4. 左栏保留连续聊天历史，新消息缓动上推、逐字生成，并有草稿、等待点和光标。
+
+![V2 分镜](docs/preview/same_process_v2_storyboard.jpg)
 
 ## 叙事
 
@@ -35,36 +45,42 @@
 
 ## 重建
 
-Python 3.12+：
+Python 3.12+，系统需有 Cairo（Debian/Ubuntu：`libcairo2`）。字体随工程提供，FFmpeg 由 `imageio-ffmpeg` 提供。
+
+先克隆制作分支：
+
+```bash
+git clone --branch gpt-history-pv https://github.com/LouisLu010/world-execute-me-pv.git
+cd world-execute-me-pv
+```
+
+将同版本歌曲／参考视频作为本地输入。`prepare.py` 提取音轨、计算频谱并获取本地歌词缓存：
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
-# 如需要重新提取用户视频的音乐及频谱
+# 从自己的参考视频准备本地音频和歌词
 python prepare.py '/path/to/reference.mp4'
 
 # 检查时间线、歌词哈希、边界帧与随机访问确定性
 python verify.py
+python verify_v2.py
 
 # 代表帧
 python render.py stills
 
 # 完整成片
-python render.py full --workers 2 --preset fast
+python render.py full --workers 2 --preset fast --name same_process_v2_1080p60.mp4
 
 # 原生 4K60：预检 → 重绘 → 编码 → 全片解码 → 原音轨校验
-python export_4k.py --workers 1
+python export_4k.py --workers 1 --name same_process_v2_4k60.mp4
 
 # 同一编辑版本的中断续渲
-python export_4k.py --workers 1 --resume
+python export_4k.py --workers 1 --name same_process_v2_4k60.mp4 --resume
 
-# 全片解码验收、AAC 包一致性检查
-python check_media.py
-
-# 或一次完成最终验收、片段截取、压缩包和交付目录
-python postprocess.py
+# export_4k.py 已自动执行全片解码和 AAC 包一致性检查
 
 # 封面、章节播放器、工程包
 python package.py
@@ -77,7 +93,7 @@ python package.py --archive
 python render.py clip --start 147.52 --end 176.96 --name execution_preview.mp4
 ```
 
-本次制作环境：`/tmp/opencode/video-inspect-venv/bin/python`。FFmpeg 由 `imageio-ffmpeg` 提供。
+视频在 Release 附件中；本地音轨和歌词缓存由构建步骤准备。逐词时间数据保留在 `data/`，`lyrics.py` 会逐行核对文本 SHA-256。
 
 ## 文件
 
@@ -85,6 +101,9 @@ python render.py clip --start 147.52 --end 176.96 --name execution_preview.mp4
 |---|---|
 | `score.py` | 分镜、时间线、执行段动作 |
 | `stage.py` | 最终版场景与剧情演出 |
+| `chat_flow.py` | 连续消息流、流式文字、批评划除与改写 |
+| `brand.py` | 真实图标、原文件校验、像素 patch |
+| `vision_sequence.py` | 逐层视觉输入演示 |
 | `world.py` | 连续 3D 结构、投影、几何变形、粒子、执行字阵 |
 | `codex_ui.py` | 官方 Codex CLI 结构的程序化视觉重建 |
 | `visual.py` | 绘图、中文／等宽字体、缓动、辉光 |
@@ -93,14 +112,14 @@ python render.py clip --start 147.52 --end 176.96 --name execution_preview.mp4
 | `export_4k.py` | 原生 4K60 重绘、分段渲染、完整验收与交付 |
 | `prepare.py` | 音轨提取、FFT 与响度特征 |
 | `verify.py` | 渲染前检查 |
+| `verify_v2.py` | 图标、消息连续性、划除时序和左栏运动回归检查 |
 | `check_media.py` | 完整成片解码与音轨字节检查 |
 | `postprocess.py` | 全片验收、Codex/执行段截取、编码接触表与交付 |
 | `package.py` | 封面、播放器、交付包 |
 | `docs/codex-reference/` | 本次核对的官方源码与 snapshot |
 | `docs/HISTORY.md` | 发展史节点与来源 |
-| `out/review.json` | 渲染前检查记录 |
-| `out/media_review.json` | 最终编码与音轨验收记录 |
+| `tools/release_assets.py` | 从核验后的 4K 成片准备播放版、预览、分镜与验收附件 |
 
-早期废案文件被保留在工作目录的 `experiments/` 和 `demo/` 中，不参与最终渲染，也不打入交付包。
+验收结果见 Pre-release 中的 `verification-v0.2.0-preview.1.json`，附件校验和见 `SHA256SUMS.txt`。
 
 来源与署名见 [`NOTICE.md`](NOTICE.md)。
