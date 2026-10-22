@@ -1,0 +1,887 @@
+{
+  "source": "MisakaZentai/world-execute-me-dsh-pv, time-only alignment data; see NOTICE.md",
+  "lines": [
+    {
+      "id": 0,
+      "text": null,
+      "source_lrc_start": 0.03,
+      "start": 0.06,
+      "end": 1.701,
+      "display_end": 1.792,
+      "words": null
+    },
+    {
+      "id": 1,
+      "text": null,
+      "source_lrc_start": 1.33,
+      "start": 1.792,
+      "end": 3.653,
+      "display_end": 3.863,
+      "words": null
+    },
+    {
+      "id": 2,
+      "text": null,
+      "source_lrc_start": 3.58,
+      "start": 3.863,
+      "end": 5.264,
+      "display_end": 5.418,
+      "words": null
+    },
+    {
+      "id": 3,
+      "text": null,
+      "source_lrc_start": 5.16,
+      "start": 5.418,
+      "end": 7.29,
+      "display_end": 7.38,
+      "words": null
+    },
+    {
+      "id": 4,
+      "text": null,
+      "source_lrc_start": 7.19,
+      "start": 7.38,
+      "end": 9.925,
+      "display_end": 10.134,
+      "words": null
+    },
+    {
+      "id": 5,
+      "text": null,
+      "source_lrc_start": 9.75,
+      "start": 10.134,
+      "end": 11.098,
+      "display_end": 11.205,
+      "words": null
+    },
+    {
+      "id": 6,
+      "text": null,
+      "source_lrc_start": 10.9,
+      "start": 11.205,
+      "end": 12.717,
+      "display_end": 12.756,
+      "words": null
+    },
+    {
+      "id": 7,
+      "text": null,
+      "source_lrc_start": 12.47,
+      "start": 12.756,
+      "end": 14.819,
+      "display_end": 15.319,
+      "words": null
+    },
+    {
+      "id": 9,
+      "text": null,
+      "source_lrc_start": 29.28,
+      "start": 29.772,
+      "end": 31.173,
+      "display_end": 31.293,
+      "words": null
+    },
+    {
+      "id": 10,
+      "text": null,
+      "source_lrc_start": 30.89,
+      "start": 31.293,
+      "end": 33.291,
+      "display_end": 33.453,
+      "words": null
+    },
+    {
+      "id": 11,
+      "text": null,
+      "source_lrc_start": 33.01,
+      "start": 33.453,
+      "end": 34.813,
+      "display_end": 34.989,
+      "words": null
+    },
+    {
+      "id": 12,
+      "text": null,
+      "source_lrc_start": 34.54,
+      "start": 34.989,
+      "end": 36.919,
+      "display_end": 37.102,
+      "words": null
+    },
+    {
+      "id": 13,
+      "text": null,
+      "source_lrc_start": 36.77,
+      "start": 37.102,
+      "end": 38.623,
+      "display_end": 38.685,
+      "words": null
+    },
+    {
+      "id": 14,
+      "text": null,
+      "source_lrc_start": 38.27,
+      "start": 38.685,
+      "end": 40.776,
+      "display_end": 40.817,
+      "words": null
+    },
+    {
+      "id": 15,
+      "text": null,
+      "source_lrc_start": 40.36,
+      "start": 40.817,
+      "end": 41.992,
+      "display_end": 42.256,
+      "words": null
+    },
+    {
+      "id": 16,
+      "text": null,
+      "source_lrc_start": 41.92,
+      "start": 42.256,
+      "end": 44.215,
+      "display_end": 44.412,
+      "words": null
+    },
+    {
+      "id": 17,
+      "text": null,
+      "source_lrc_start": 44.04,
+      "start": 44.412,
+      "end": 45.745,
+      "display_end": 45.763,
+      "words": null
+    },
+    {
+      "id": 18,
+      "text": null,
+      "source_lrc_start": 45.52,
+      "start": 45.763,
+      "end": 47.484,
+      "display_end": 47.706,
+      "words": null
+    },
+    {
+      "id": 19,
+      "text": null,
+      "source_lrc_start": 47.27,
+      "start": 47.706,
+      "end": 49.468,
+      "display_end": 49.684,
+      "words": null
+    },
+    {
+      "id": 20,
+      "text": null,
+      "source_lrc_start": 49.11,
+      "start": 49.684,
+      "end": 51.296,
+      "display_end": 51.447,
+      "words": null
+    },
+    {
+      "id": 21,
+      "text": null,
+      "source_lrc_start": 50.95,
+      "start": 51.447,
+      "end": 53.117,
+      "display_end": 53.372,
+      "words": null
+    },
+    {
+      "id": 22,
+      "text": null,
+      "source_lrc_start": 52.99,
+      "start": 53.372,
+      "end": 54.825,
+      "display_end": 55.084,
+      "words": null
+    },
+    {
+      "id": 23,
+      "text": null,
+      "source_lrc_start": 54.74,
+      "start": 55.084,
+      "end": 56.938,
+      "display_end": 57.114,
+      "words": null
+    },
+    {
+      "id": 24,
+      "text": null,
+      "source_lrc_start": 56.79,
+      "start": 57.114,
+      "end": 58.701,
+      "display_end": 59.056,
+      "words": null
+    },
+    {
+      "id": 25,
+      "text": null,
+      "source_lrc_start": 58.65,
+      "start": 59.056,
+      "end": 60.977,
+      "display_end": 60.986,
+      "words": null
+    },
+    {
+      "id": 26,
+      "text": null,
+      "source_lrc_start": 60.57,
+      "start": 60.986,
+      "end": 62.599,
+      "display_end": 63.053,
+      "words": null
+    },
+    {
+      "id": 27,
+      "text": null,
+      "source_lrc_start": 62.41,
+      "start": 63.053,
+      "end": 64.639,
+      "display_end": 64.639,
+      "words": null
+    },
+    {
+      "id": 28,
+      "text": null,
+      "source_lrc_start": 64.29,
+      "start": 64.639,
+      "end": 66.286,
+      "display_end": 66.286,
+      "words": null
+    },
+    {
+      "id": 29,
+      "text": null,
+      "source_lrc_start": 66.17,
+      "start": 66.286,
+      "end": 68.201,
+      "display_end": 68.201,
+      "words": null
+    },
+    {
+      "id": 30,
+      "text": null,
+      "source_lrc_start": 67.99,
+      "start": 68.201,
+      "end": 70.011,
+      "display_end": 70.123,
+      "words": null
+    },
+    {
+      "id": 31,
+      "text": null,
+      "source_lrc_start": 70.02,
+      "start": 70.123,
+      "end": 71.544,
+      "display_end": 71.588,
+      "words": null
+    },
+    {
+      "id": 32,
+      "text": null,
+      "source_lrc_start": 71.4,
+      "start": 71.588,
+      "end": 73.629,
+      "display_end": 73.926,
+      "words": null
+    },
+    {
+      "id": 33,
+      "text": null,
+      "source_lrc_start": 73.53,
+      "start": 73.926,
+      "end": 75.501,
+      "display_end": 75.596,
+      "words": null
+    },
+    {
+      "id": 34,
+      "text": null,
+      "source_lrc_start": 75.28999999999999,
+      "start": 75.596,
+      "end": 77.526,
+      "display_end": 77.709,
+      "words": null
+    },
+    {
+      "id": 35,
+      "text": null,
+      "source_lrc_start": 77.16,
+      "start": 77.709,
+      "end": 79.009,
+      "display_end": 79.243,
+      "words": null
+    },
+    {
+      "id": 36,
+      "text": null,
+      "source_lrc_start": 78.93,
+      "start": 79.243,
+      "end": 81.031,
+      "display_end": 81.276,
+      "words": null
+    },
+    {
+      "id": 37,
+      "text": null,
+      "source_lrc_start": 80.93,
+      "start": 81.276,
+      "end": 82.898,
+      "display_end": 82.958,
+      "words": null
+    },
+    {
+      "id": 38,
+      "text": null,
+      "source_lrc_start": 82.56,
+      "start": 82.958,
+      "end": 84.897,
+      "display_end": 85.132,
+      "words": null
+    },
+    {
+      "id": 39,
+      "text": null,
+      "source_lrc_start": 84.6,
+      "start": 85.132,
+      "end": 86.573,
+      "display_end": 86.653,
+      "words": null
+    },
+    {
+      "id": 40,
+      "text": null,
+      "source_lrc_start": 86.21000000000001,
+      "start": 86.653,
+      "end": 88.54,
+      "display_end": 88.54,
+      "words": null
+    },
+    {
+      "id": 41,
+      "text": null,
+      "source_lrc_start": 88.34,
+      "start": 88.54,
+      "end": 90.069,
+      "display_end": 90.277,
+      "words": null
+    },
+    {
+      "id": 42,
+      "text": null,
+      "source_lrc_start": 89.91,
+      "start": 90.277,
+      "end": 91.681,
+      "display_end": 91.888,
+      "words": null
+    },
+    {
+      "id": 43,
+      "text": null,
+      "source_lrc_start": 91.44,
+      "start": 91.888,
+      "end": 93.53,
+      "display_end": 93.935,
+      "words": null
+    },
+    {
+      "id": 44,
+      "text": null,
+      "source_lrc_start": 93.52000000000001,
+      "start": 93.935,
+      "end": 95.546,
+      "display_end": 95.628,
+      "words": null
+    },
+    {
+      "id": 45,
+      "text": null,
+      "source_lrc_start": 95.28,
+      "start": 95.628,
+      "end": 97.436,
+      "display_end": 97.696,
+      "words": null
+    },
+    {
+      "id": 46,
+      "text": null,
+      "source_lrc_start": 97.32,
+      "start": 97.696,
+      "end": 99.111,
+      "display_end": 99.257,
+      "words": null
+    },
+    {
+      "id": 47,
+      "text": null,
+      "source_lrc_start": 98.93,
+      "start": 99.257,
+      "end": 101.063,
+      "display_end": 101.281,
+      "words": null
+    },
+    {
+      "id": 48,
+      "text": null,
+      "source_lrc_start": 101.13,
+      "start": 101.281,
+      "end": 103.183,
+      "display_end": 103.522,
+      "words": null
+    },
+    {
+      "id": 49,
+      "text": null,
+      "source_lrc_start": 103.03,
+      "start": 103.522,
+      "end": 105.264,
+      "display_end": 105.292,
+      "words": null
+    },
+    {
+      "id": 50,
+      "text": null,
+      "source_lrc_start": 105.22,
+      "start": 105.292,
+      "end": 106.986,
+      "display_end": 107.142,
+      "words": null
+    },
+    {
+      "id": 51,
+      "text": null,
+      "source_lrc_start": 106.84,
+      "start": 107.142,
+      "end": 108.953,
+      "display_end": 108.984,
+      "words": null
+    },
+    {
+      "id": 52,
+      "text": null,
+      "source_lrc_start": 108.69,
+      "start": 108.984,
+      "end": 110.405,
+      "display_end": 110.405,
+      "words": null
+    },
+    {
+      "id": 53,
+      "text": null,
+      "source_lrc_start": 110.4,
+      "start": 110.405,
+      "end": 112.105,
+      "display_end": 112.198,
+      "words": null
+    },
+    {
+      "id": 54,
+      "text": null,
+      "source_lrc_start": 111.97999999999999,
+      "start": 112.198,
+      "end": 113.076,
+      "display_end": 113.251,
+      "words": null
+    },
+    {
+      "id": 55,
+      "text": null,
+      "source_lrc_start": 112.89,
+      "start": 113.251,
+      "end": 113.92,
+      "display_end": 113.93,
+      "words": null
+    },
+    {
+      "id": 56,
+      "text": null,
+      "source_lrc_start": 113.75,
+      "start": 113.93,
+      "end": 114.76,
+      "display_end": 114.76,
+      "words": null
+    },
+    {
+      "id": 57,
+      "text": null,
+      "source_lrc_start": 114.75,
+      "start": 114.76,
+      "end": 115.846,
+      "display_end": 116.012,
+      "words": null
+    },
+    {
+      "id": 58,
+      "text": null,
+      "source_lrc_start": 115.6,
+      "start": 116.012,
+      "end": 117.975,
+      "display_end": 118.236,
+      "words": null
+    },
+    {
+      "id": 59,
+      "text": null,
+      "source_lrc_start": 117.95,
+      "start": 118.236,
+      "end": 120.125,
+      "display_end": 120.212,
+      "words": null
+    },
+    {
+      "id": 60,
+      "text": null,
+      "source_lrc_start": 119.81,
+      "start": 120.212,
+      "end": 121.905,
+      "display_end": 122.008,
+      "words": null
+    },
+    {
+      "id": 61,
+      "text": null,
+      "source_lrc_start": 121.8,
+      "start": 122.008,
+      "end": 123.762,
+      "display_end": 123.828,
+      "words": null
+    },
+    {
+      "id": 62,
+      "text": null,
+      "source_lrc_start": 123.55,
+      "start": 123.828,
+      "end": 125.569,
+      "display_end": 125.582,
+      "words": null
+    },
+    {
+      "id": 63,
+      "text": null,
+      "source_lrc_start": 125.33,
+      "start": 125.582,
+      "end": 128.353,
+      "display_end": 128.853,
+      "words": null
+    },
+    {
+      "id": 64,
+      "text": null,
+      "source_lrc_start": 128.42,
+      "start": 128.87,
+      "end": 130.77,
+      "display_end": 131.207,
+      "words": null
+    },
+    {
+      "id": 65,
+      "text": null,
+      "source_lrc_start": 130.74,
+      "start": 131.207,
+      "end": 133.45,
+      "display_end": 133.95,
+      "words": null
+    },
+    {
+      "id": 67,
+      "text": null,
+      "source_lrc_start": 147.52,
+      "start": 147.891,
+      "end": 148.716,
+      "display_end": 148.716,
+      "words": null
+    },
+    {
+      "id": 68,
+      "text": null,
+      "source_lrc_start": 148.59,
+      "start": 148.716,
+      "end": 149.409,
+      "display_end": 149.73,
+      "words": null
+    },
+    {
+      "id": 69,
+      "text": null,
+      "source_lrc_start": 149.78,
+      "start": 149.73,
+      "end": 150.609,
+      "display_end": 150.736,
+      "words": null
+    },
+    {
+      "id": 70,
+      "text": null,
+      "source_lrc_start": 150.64,
+      "start": 150.736,
+      "end": 151.47,
+      "display_end": 151.662,
+      "words": null
+    },
+    {
+      "id": 71,
+      "text": null,
+      "source_lrc_start": 151.53,
+      "start": 151.662,
+      "end": 152.477,
+      "display_end": 152.597,
+      "words": null
+    },
+    {
+      "id": 72,
+      "text": null,
+      "source_lrc_start": 152.43,
+      "start": 152.597,
+      "end": 153.431,
+      "display_end": 153.431,
+      "words": null
+    },
+    {
+      "id": 73,
+      "text": null,
+      "source_lrc_start": 153.32,
+      "start": 153.431,
+      "end": 154.361,
+      "display_end": 154.361,
+      "words": null
+    },
+    {
+      "id": 74,
+      "text": null,
+      "source_lrc_start": 154.31,
+      "start": 154.361,
+      "end": 155.024,
+      "display_end": 155.272,
+      "words": null
+    },
+    {
+      "id": 75,
+      "text": null,
+      "source_lrc_start": 155.2,
+      "start": 155.272,
+      "end": 155.978,
+      "display_end": 156.211,
+      "words": null
+    },
+    {
+      "id": 76,
+      "text": null,
+      "source_lrc_start": 156.18,
+      "start": 156.211,
+      "end": 157.169,
+      "display_end": 157.197,
+      "words": null
+    },
+    {
+      "id": 77,
+      "text": null,
+      "source_lrc_start": 157.12,
+      "start": 157.197,
+      "end": 158.105,
+      "display_end": 158.12,
+      "words": null
+    },
+    {
+      "id": 78,
+      "text": null,
+      "source_lrc_start": 158.02,
+      "start": 158.12,
+      "end": 159.015,
+      "display_end": 159.204,
+      "words": null
+    },
+    {
+      "id": 79,
+      "text": null,
+      "source_lrc_start": 158.79,
+      "start": 159.204,
+      "end": 159.703,
+      "display_end": 159.791,
+      "words": null
+    },
+    {
+      "id": 80,
+      "text": null,
+      "source_lrc_start": 159.66,
+      "start": 159.791,
+      "end": 160.425,
+      "display_end": 160.656,
+      "words": null
+    },
+    {
+      "id": 81,
+      "text": null,
+      "source_lrc_start": 160.45,
+      "start": 160.656,
+      "end": 161.438,
+      "display_end": 161.666,
+      "words": null
+    },
+    {
+      "id": 82,
+      "text": null,
+      "source_lrc_start": 161.51,
+      "start": 161.666,
+      "end": 162.3,
+      "display_end": 162.595,
+      "words": null
+    },
+    {
+      "id": 83,
+      "text": null,
+      "source_lrc_start": 162.23,
+      "start": 162.595,
+      "end": 164.324,
+      "display_end": 164.324,
+      "words": null
+    },
+    {
+      "id": 84,
+      "text": null,
+      "source_lrc_start": 164.07,
+      "start": 164.324,
+      "end": 166.064,
+      "display_end": 166.184,
+      "words": null
+    },
+    {
+      "id": 85,
+      "text": null,
+      "source_lrc_start": 166.05,
+      "start": 166.184,
+      "end": 167.945,
+      "display_end": 167.945,
+      "words": null
+    },
+    {
+      "id": 86,
+      "text": null,
+      "source_lrc_start": 167.75,
+      "start": 167.945,
+      "end": 169.68,
+      "display_end": 169.68,
+      "words": null
+    },
+    {
+      "id": 87,
+      "text": null,
+      "source_lrc_start": 169.61,
+      "start": 169.68,
+      "end": 171.86,
+      "display_end": 171.86,
+      "words": null
+    },
+    {
+      "id": 88,
+      "text": null,
+      "source_lrc_start": 171.77,
+      "start": 171.86,
+      "end": 173.376,
+      "display_end": 173.491,
+      "words": null
+    },
+    {
+      "id": 89,
+      "text": null,
+      "source_lrc_start": 173.11,
+      "start": 173.491,
+      "end": 174.963,
+      "display_end": 175.011,
+      "words": null
+    },
+    {
+      "id": 90,
+      "text": null,
+      "source_lrc_start": 174.8,
+      "start": 175.011,
+      "end": 176.958,
+      "display_end": 177.442,
+      "words": null
+    },
+    {
+      "id": 91,
+      "text": null,
+      "source_lrc_start": 176.96,
+      "start": 177.442,
+      "end": 179.089,
+      "display_end": 179.202,
+      "words": null
+    },
+    {
+      "id": 92,
+      "text": null,
+      "source_lrc_start": 178.79,
+      "start": 179.202,
+      "end": 180.755,
+      "display_end": 181.018,
+      "words": null
+    },
+    {
+      "id": 93,
+      "text": null,
+      "source_lrc_start": 180.78,
+      "start": 181.018,
+      "end": 182.745,
+      "display_end": 182.752,
+      "words": null
+    },
+    {
+      "id": 94,
+      "text": null,
+      "source_lrc_start": 182.43,
+      "start": 182.752,
+      "end": 184.481,
+      "display_end": 184.601,
+      "words": null
+    },
+    {
+      "id": 95,
+      "text": null,
+      "source_lrc_start": 184.33,
+      "start": 184.601,
+      "end": 187.93,
+      "display_end": 188.294,
+      "words": null
+    },
+    {
+      "id": 96,
+      "text": null,
+      "source_lrc_start": 187.97,
+      "start": 188.294,
+      "end": 189.582,
+      "display_end": 189.582,
+      "words": null
+    },
+    {
+      "id": 97,
+      "text": null,
+      "source_lrc_start": 189.26,
+      "start": 189.582,
+      "end": 190.59,
+      "display_end": 190.604,
+      "words": null
+    },
+    {
+      "id": 98,
+      "text": null,
+      "source_lrc_start": 190.24,
+      "start": 190.604,
+      "end": 191.875,
+      "display_end": 192.375,
+      "words": null
+    },
+    {
+      "id": 100,
+      "text": null,
+      "source_lrc_start": 205.56,
+      "start": 205.372,
+      "end": 206.56,
+      "display_end": 207.06,
+      "words": null
+    }
+  ]
+}
